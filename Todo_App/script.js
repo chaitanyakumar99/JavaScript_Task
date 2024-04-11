@@ -31,6 +31,9 @@ listContainer.addEventListener("click",function(e){
 function saveData(){
        localStorage.setItem("data", listContainer.innerHTML); 
 }
+
+// if we refrech the page to save the data we use getitem and to display items
+
 function showTask(){
       listContainer.innerHTML=localStorage.getItem("data");
 }
